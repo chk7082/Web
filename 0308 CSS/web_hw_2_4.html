@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* 자손 결합자 */
+    /* 자손 결합자를 아래와 같이 사용하면
+       div의 모든 자손중에 p tag에 대해서 다음의 스타일이 적용되고 */
+    div p {
+      color: blue;
+    }
+
+    /* 자식 결합자 */
+    /* 자식 결합자를 아래와 같이 사용하면
+       div의 바로 자식인 p tag에 대해서만 다음의 스타일이 적용된다 */
+    div > p {
+      color: crimson;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <p>자식</p>
+
+    <span><p style="margin-left: 50px;">자손</p></span>
+
+    <p>자식</p>
+    
+  </div>
+</body>
+</html>
